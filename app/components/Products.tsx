@@ -105,7 +105,7 @@ export default function Products() {
                 alt="Libro Liviin"
                 fill
                 priority 
-                sizes="(max-width: 768px)80vw, 33vw" 
+                sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -153,7 +153,7 @@ export default function Products() {
                 alt="Libro El Llamado - El arte de TRANSFORMAR tu hogar"
                 fill
                 priority 
-                sizes="(max-width: 768px) 80vw, 33vw" 
+                sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -185,14 +185,13 @@ export default function Products() {
           {/* PRODUCTO 3: La Capacitación */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-500 group relative product-reveal opacity-0 translate-y-12 delay-[500ms] ease-out overflow-hidden rounded-sm">
             
-            {/* NUEVA FOTO: Contenedor con aspecto editorial 4:3 y zoom on hover */}
             <div className="relative w-full aspect-[16/10] overflow-hidden border-b border-brand-oak/20">
               <Image 
                 src="/book3.webp" 
                 alt="Manual de Capacitación Liviin Premium"
                 fill
                 priority
-                sizes="(max-width: 768px) 80vw, 33vw" 
+                sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>

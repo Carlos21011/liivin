@@ -38,12 +38,12 @@ export default function Hero() {
             </p>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl text-brand-cedar leading-[1.1] mb-8 font-light tracking-tight">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl text-brand-cedar leading-[1.1] mb-8 font-light tracking-tight animate-none opacity-100">
             El Arte de <br />
             <span className="font-serif italic text-brand-olive">Liderar tu Hogar</span>
           </h1>
 
-          <p className="text-lg text-brand-cedar/80 mb-10 font-sans max-w-lg leading-relaxed">
+          <p className="text-lg text-brand-cedar/80 mb-10 font-sans max-w-lg leading-relaxed animate-none opacity-100">
             Después de 20 años diseñando casas, hoy te enseño a liderar la tuya. <strong className="text-brand-cedar font-bold">Bienvenida a Liviin.</strong>
           </p>
 
