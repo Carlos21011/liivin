@@ -10,6 +10,8 @@ import Objections from './components/Objections';
 import Author from './components/Author';
 import Footer from './components/Footer';
 import SalesNotification from './components/SalesNotification';
+import ScrollToTop from './components/ScrollToTop';
+import ExitIntent from './components/ExitIntent';
 import SocialProof from './components/SocialProof';
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Story />     
-      <PainPoints />
+  
       <Method />
       <Products />
       <Transformation />
@@ -26,6 +28,8 @@ export default function Home() {
       <Footer />
      
       <SocialProof />
+      <ScrollToTop />
+      <ExitIntent />
     </main>
   );
 }

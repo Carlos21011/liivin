@@ -21,17 +21,13 @@ export default function Footer() {
           </h2>
         </div>
 
-        {/* ========================================== */}
-        {/* 2. REJILLA EDITORIAL (3 Columnas)            */}
-        {/* ========================================== */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 border-t border-brand-oak/20 pt-16 mb-16">
 
           {/* Columna Izquierda: Logo y Firma */}
           <div className="md:col-span-5 lg:col-span-4 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="relative w-[180px] h-[50px] mb-8">
-              {/* Truco PRO: 'brightness-0 invert' vuelve el logo blanco puro para que resalte en el fondo oscuro */}
               <Image
-                src="/LOGOn.png"
+                src="/logo.webp"
                 alt="Liviin Logo"
                 fill
                 className="object-contain object-center md:object-left brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
@@ -75,9 +71,6 @@ export default function Footer() {
 
         </div>
 
-        {/* ========================================== */}
-        {/* 3. BARRA LEGAL Y DERECHOS                    */}
-        {/* ========================================== */}
         <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center text-[10px] md:text-xs font-sans text-brand-offwhite/30 pt-8 border-t border-brand-oak/10 tracking-wider">
           <p className="mt-4 md:mt-0">© 2024 Liviin. Todos los derechos reservados.</p>
           <div className="flex gap-6 uppercase">

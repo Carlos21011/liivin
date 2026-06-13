@@ -20,7 +20,7 @@ const baskervville = Baskervville({
 });
 
 export const metadata: Metadata = {
-  title: "Liviin | El Arte de Liderar tu Hogar",
+  title: "LIVIIN | El Arte de Liderar tu Hogar",
   description: "Una herramienta integral diseñada para la gestión eficiente del mantenimiento y cuidado del hogar.",
 };
 

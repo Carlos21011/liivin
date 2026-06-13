@@ -56,7 +56,7 @@ export default function Navbar() {
                 : 'w-[280px] h-[75px] md:w-[340px] md:h-[90px]'
             }`}>
               <Image
-                src="/LOGOn.png"
+                src="/logo.webp"
                 alt="Liviin Logo"
                 fill
                 className="object-contain object-left"
