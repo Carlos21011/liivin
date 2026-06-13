@@ -61,6 +61,7 @@ export default function Author() {
                    src="/author.webp" 
                    alt="María Teresa Espinosa"
                    fill
+                   sizes="(max-width: 768px) 100vw, 500px" 
                    className="object-cover object-center grayscale-[30%] hover:grayscale-0 hover:scale-[1.03] transition-all duration-1000 ease-in-out"
                 />
              </div>

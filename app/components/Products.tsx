@@ -104,7 +104,8 @@ export default function Products() {
                 src="/book1.webp" 
                 alt="Libro Liviin"
                 fill
-                priority
+                priority 
+                sizes="(max-width: 768px) 100vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -151,6 +152,8 @@ export default function Products() {
                 src="/book2.webp" 
                 alt="Libro El Llamado - El arte de TRANSFORMAR tu hogar"
                 fill
+                priority 
+                sizes="(max-width: 768px) 100vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -189,6 +192,7 @@ export default function Products() {
                 alt="Manual de Capacitación Liviin Premium"
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>

@@ -98,8 +98,9 @@ export default function Navbar() {
           </div>
 
           {/* BOTÓN HAMBURGUESA (MÓVIL) */}
-          <button
-            className="md:hidden relative p-2 focus:outline-none text-brand-cedar transition-colors duration-300"
+          <button 
+            className="md:hidden relative p-2 focus:outline-none text-brand-cedar transition-colors"
+            aria-label="Abrir menú principal"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <div className="w-8 flex flex-col gap-[6px] items-end">

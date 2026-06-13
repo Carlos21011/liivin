@@ -7,13 +7,14 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 flex justify-end pointer-events-none">
         <div className="relative w-full lg:w-[65%] h-full">
 
-          <Image
-            src="/hero1.webp"
+          <Image 
+            src="/hero1.webp" 
             alt="Liviin Method"
             fill
             priority
-            quality={100}
-            className="object-cover object-[center_30%]"
+            quality={100} 
+            sizes="(max-width: 1024px) 100vw, 65vw" /* NUEVO: Optimización de carga */
+            className="object-cover object-[center_30%]" 
           />
 
           {/* ESCRITORIO: Agregamos tonos 'taupe/café' al degradado para romper el verde */}
@@ -41,12 +42,11 @@ export default function Hero() {
             <span className="font-serif italic text-brand-olive">Liderar tu Hogar</span>
           </h1>
 
-          <p className="text-lg text-brand-taupe mb-10 font-sans max-w-lg leading-relaxed">
-            Después de 20 años diseñando casas, hoy te enseño a liderar la tuya. <strong className="text-brand-cedar font-medium">Bienvenida a Liviin.</strong>
+          <p className="text-lg text-brand-cedar/80 mb-10 font-sans max-w-lg leading-relaxed">
+            Después de 20 años diseñando casas, hoy te enseño a liderar la tuya. <strong className="text-brand-cedar font-bold">Bienvenida a Liviin.</strong>
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            {/* Botón en tonos Taupe/Café para romper lo monocromático */}
             <button className="w-full sm:w-auto px-10 py-4 bg-brand-oak text-brand-cedar font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-taupe hover:text-brand-offwhite transition-all duration-300 shadow-xl">
               Empezar el Viaje
             </button>
@@ -57,8 +57,8 @@ export default function Hero() {
                 <div className="w-9 h-9 rounded-full bg-brand-shadow border-2 border-brand-offwhite"></div>
                 <div className="w-9 h-9 rounded-full bg-brand-taupe border-2 border-brand-offwhite"></div>
               </div>
-              <p className="text-xs text-brand-taupe max-w-[140px] leading-snug">
-                Más de <strong className="text-brand-cedar font-medium">140 asistentes</strong> capacitadas.
+              <p className="text-xs text-brand-cedar/80 max-w-[140px] leading-snug">
+                Más de <strong className="text-brand-cedar font-bold">140 asistentes</strong> capacitadas.
               </p>
             </div>
           </div>
