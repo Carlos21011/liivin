@@ -63,7 +63,7 @@ export default function Hero() {
             </div>
           </div>
 
-        </div>
+        </div> 
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 animate-bounce opacity-70">
         <p className="text-[9px] text-brand-cedar tracking-[0.2em] uppercase font-bold">

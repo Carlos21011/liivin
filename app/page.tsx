@@ -26,7 +26,7 @@ export default function Home() {
       <Objections />
       <Author />
       <Footer />
-     
+      
       <SocialProof />
       <ScrollToTop />
       <ExitIntent />

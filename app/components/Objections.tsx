@@ -115,7 +115,7 @@ export default function Objections() {
         <div 
           className={`mt-20 text-center transition-all duration-[1000ms] ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
-          }`}
+          }`} 
           style={{ transitionDelay: isVisible ? '600ms' : '0ms' }}
         >
           <p className="text-brand-cedar font-serif italic text-xl md:text-2xl mb-8 relative inline-block">

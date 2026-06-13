@@ -51,13 +51,9 @@ export default function Author() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row gap-20 lg:gap-24 items-center">
-          
-          {/* ========================================================= */}
-          {/* LADO IZQUIERDO: Fotografía Editorial (Animada primero)    */}
-          {/* ========================================================= */}
+        
           <div className="w-full lg:w-1/2 relative mt-8 lg:mt-0 author-reveal opacity-0 translate-y-16 transition-all duration-[1200ms] ease-out">
-             
-             {/* Marco exterior desplazado (Estilo Galería de Arte) */}
+            
              <div className="absolute -inset-6 border border-brand-oak/20 hidden md:block transition-all duration-1000 delay-500 hover:border-brand-oak/60"></div>
              
              <div className="relative aspect-[3/4] w-full max-w-[480px] mx-auto overflow-hidden shadow-2xl">

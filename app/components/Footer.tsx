@@ -60,7 +60,7 @@ export default function Footer() {
                   Instagram · @mte_disenointerior
                 </a>
               </li>
-              <li>
+              <li> 
                 <a href="#" className="hover:text-brand-oak transition-colors flex items-center justify-center md:justify-start gap-3 group">
                   <span className="w-4 h-[1px] bg-brand-oak/50 group-hover:w-6 transition-all duration-300"></span>
                   TikTok · @mariateresaespinosa_

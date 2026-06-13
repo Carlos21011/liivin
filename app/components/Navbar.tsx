@@ -65,7 +65,6 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* NAVEGACIÓN DE ESCRITORIO */}
           <div className="hidden md:flex items-center gap-12">
             <div className="flex gap-10 text-xs tracking-[0.2em] uppercase transition-all duration-500">
               {navLinks.map((link) => (

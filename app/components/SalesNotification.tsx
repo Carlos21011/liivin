@@ -32,7 +32,7 @@ export default function SalesNotification() {
     >
       <div className="w-10 h-10 rounded-full bg-brand-olive/20 flex items-center justify-center text-brand-offwhite text-xs font-serif italic">
         LV
-      </div>
+      </div> 
       <div>
         <p className="text-brand-offwhite text-xs font-medium tracking-wide">
           {notification.name}

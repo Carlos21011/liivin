@@ -7,7 +7,6 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Aparece solo después de bajar 500px
       if (window.scrollY > 500) {
         setIsVisible(true);
       } else {

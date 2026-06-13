@@ -232,7 +232,7 @@ export default function Products() {
 
         </div>
 
-        {/* Indicador Dinámico de Swipe para Móvil */}
+        {/* Indicador Dinámico de Swipe para Móvil */} 
         <div className="flex justify-center gap-2 mt-4 mb-12 lg:hidden product-reveal opacity-0 transition-opacity duration-1000 delay-[700ms]">
           {[0, 1, 2].map((dot) => (
             <span 

@@ -88,7 +88,7 @@ export default function Method() {
                 <div className="h-full bg-brand-olive w-1/3 transition-all duration-300 group-hover:w-full"></div>
               </div>
             </div>
-          ))}
+          ))} 
 
         </div>
 

@@ -74,7 +74,7 @@ export default function SocialProof() {
             <span className="text-[10px] text-brand-offwhite/50 font-sans">
               hace {notification.time} min
             </span>
-          </div>
+          </div> 
           <p className="text-brand-offwhite font-sans text-xs md:text-sm leading-tight">
             <strong className="font-medium text-white">{notification.name}</strong> adquirió <br />
             <span className="font-serif italic text-brand-oak text-sm md:text-base leading-relaxed">

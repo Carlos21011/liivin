@@ -22,7 +22,7 @@ export default function PainPoints() {
       elements.forEach(el => observer.unobserve(el));
     };
   }, []);
-
+ 
   return (
     <section className="w-full bg-brand-cedar py-24 px-6 lg:px-12 relative overflow-hidden">
       {/* Elemento gráfico de fondo sutil */}

@@ -10,11 +10,10 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-// Cargamos Baskervville (Tipografía Complementaria / Serif)
 const baskervville = Baskervville({
   variable: "--font-baskervville",
   subsets: ["latin"],
-  weight: ["400"], // Regular e Italic (italic se maneja vía CSS)
+  weight: ["400"], 
   style: ["normal", "italic"],
   display: "swap",
 });

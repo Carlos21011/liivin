@@ -32,7 +32,7 @@ export default function ExitIntent() {
           onClick={() => setIsVisible(false)}
           className="absolute top-4 right-6 text-brand-taupe hover:text-brand-cedar text-3xl font-light transition-colors"
         >
-          &times;
+          &times; 
         </button>
 
         <p className="text-brand-olive tracking-[0.2em] text-[10px] font-bold uppercase mb-4 text-center">

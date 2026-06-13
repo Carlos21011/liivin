@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 export default function Story() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
