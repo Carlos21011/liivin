@@ -105,7 +105,7 @@ export default function Products() {
                 alt="Libro Liviin"
                 fill
                 priority 
-                sizes="(max-width: 768px) 100vw, 33vw" 
+                sizes="(max-width: 768px)80vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -153,7 +153,7 @@ export default function Products() {
                 alt="Libro El Llamado - El arte de TRANSFORMAR tu hogar"
                 fill
                 priority 
-                sizes="(max-width: 768px) 100vw, 33vw" 
+                sizes="(max-width: 768px) 80vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -192,7 +192,7 @@ export default function Products() {
                 alt="Manual de Capacitación Liviin Premium"
                 fill
                 priority
-                sizes="(max-width: 768px) 100vw, 33vw" 
+                sizes="(max-width: 768px) 80vw, 33vw" 
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -248,9 +248,6 @@ export default function Products() {
           ))}
         </div>
 
-        {/* ========================================================= */}
-        {/* EL ANCLA: PACK COMPLETO (Oferta Irresistible)             */}
-        {/* ========================================================= */}
         <div className="mt-8 relative flex flex-col lg:flex-row items-center justify-between bg-brand-cedar border-2 border-brand-oak p-10 lg:p-16 shadow-2xl product-reveal opacity-0 translate-y-12 transition-all duration-1000 delay-[700ms] ease-out">
           
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 lg:left-12 lg:translate-x-0 bg-brand-oak text-brand-cedar px-6 py-1 font-sans text-xs tracking-widest uppercase font-bold whitespace-nowrap">

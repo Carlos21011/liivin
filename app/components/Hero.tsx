@@ -11,9 +11,10 @@ export default function Hero() {
             src="/hero1.webp" 
             alt="Liviin Method"
             fill
-            priority
+            priority={true} 
+            fetchPriority="high" 
             quality={100} 
-            sizes="(max-width: 1024px) 100vw, 65vw" /* NUEVO: Optimización de carga */
+            sizes="(max-width: 1024px) 100vw, 65vw"
             className="object-cover object-[center_30%]" 
           />
 
@@ -47,7 +48,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            <button className="w-full sm:w-auto px-10 py-4 bg-brand-oak text-brand-cedar font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-taupe hover:text-brand-offwhite transition-all duration-300 shadow-xl">
+            <button className="w-full sm:w-auto px-10 py-4 bg-brand-cedar text-brand-offwhite font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-oak hover:text-brand-cedar transition-all duration-300 shadow-xl">
               Empezar el Viaje
             </button>
 
