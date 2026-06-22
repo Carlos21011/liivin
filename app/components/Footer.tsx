@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer id="contacto" className="w-full bg-brand-cedar pt-32 pb-10 px-6 lg:px-12 relative overflow-hidden">
-      
+
       {/* Resplandor decorativo de fondo */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-oak/5 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
 
@@ -12,8 +12,8 @@ export default function Footer() {
         <div className="text-center mb-24 relative">
           <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-[1px] h-8 bg-brand-oak/50"></div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif text-brand-offwhite/90 italic tracking-tight mb-6">
-            "Que tu hogar nunca más <br className="hidden md:block" />
-            <span className="text-brand-oak font-light">te quede grande."</span>
+            "Que tu hogar siempre se sienta como refugio <br className="hidden md:block" />
+            <span className="text-brand-oak font-light">nunca como una carga!"</span>
           </h2>
         </div>
 
@@ -50,13 +50,23 @@ export default function Footer() {
             <h4 className="text-brand-offwhite font-bold tracking-[0.2em] uppercase text-xs mb-6">Comunidad</h4>
             <ul className="space-y-4 text-brand-offwhite/90 font-sans text-sm font-light">
               <li>
-                <a href="#" className="hover:text-brand-oak transition-colors flex items-center justify-center md:justify-start gap-3 group">
+                <a
+                  href="https://www.instagram.com/mte_disenointerior"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-oak transition-colors flex items-center justify-center md:justify-start gap-3 group"
+                >
                   <span className="w-4 h-[1px] bg-brand-oak/50 group-hover:w-6 transition-all duration-300"></span>
                   Instagram · @mte_disenointerior
                 </a>
               </li>
-              <li> 
-                <a href="#" className="hover:text-brand-oak transition-colors flex items-center justify-center md:justify-start gap-3 group">
+              <li>
+                <a
+                  href="https://www.tiktok.com/@mariateresaespinosa_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-oak transition-colors flex items-center justify-center md:justify-start gap-3 group"
+                >
                   <span className="w-4 h-[1px] bg-brand-oak/50 group-hover:w-6 transition-all duration-300"></span>
                   TikTok · @mariateresaespinosa_
                 </a>
@@ -67,7 +77,7 @@ export default function Footer() {
         </div>
 
         <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center text-[10px] md:text-xs font-sans text-brand-offwhite/80 pt-8 border-t border-brand-oak/10 tracking-wider">
-          <p className="mt-4 md:mt-0">© 2024 Liviin. Todos los derechos reservados.</p>
+          <p className="mt-4 md:mt-0">© 2026 Liviin. Todos los derechos reservados.</p>
           <div className="flex gap-6 uppercase">
             <a href="#" className="hover:text-brand-offwhite transition-colors">Términos y Condiciones</a>
             <a href="#" className="hover:text-brand-offwhite transition-colors">Política de Privacidad</a>

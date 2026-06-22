@@ -99,9 +99,9 @@ export default function Products() {
           {/* PRODUCTO 1: El Despertar */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-700 group relative product-reveal opacity-0 translate-y-12 delay-[100ms] ease-out overflow-hidden rounded-sm">
             
-            <div className="relative w-full aspect-[16/10] overflow-hidden border-b border-brand-oak/20">
+            <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
               <Image 
-                src="/book1.webp" 
+                src="/1.webp" 
                 alt="Libro Liviin"
                 fill
                 priority 
@@ -133,7 +133,7 @@ export default function Products() {
               
               <div className="bg-brand-cedar/5 p-4 rounded-sm border border-brand-oak/20 mb-8">
                 <p className="text-brand-cedar font-bold text-[10px] tracking-widest uppercase mb-2">Bonus Incluidos:</p>
-                <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ Empatía en casa:</strong> Un ensayo editorial corto sobre lo que sienten las asistentes del hogar al llegar a un lugar nuevo.</p>
+                <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ Las manos que sostienen tu hogar:</strong> Un ensayo editorial corto sobre lo que sienten las asistentes del hogar al llegar a un lugar nuevo.</p>
                 <p className="text-xs text-brand-taupe"><strong className="font-medium text-brand-cedar">✓ Home Excel descargable:</strong> La plantilla exacta que uso con mis clientas, lista para que la adaptes esta misma semana.</p>
                 <p className="text-[10px] text-brand-taupe/70 text-center uppercase tracking-widest mt-4">Acceso inmediato · Descarga permanente</p>
               </div>
@@ -144,12 +144,11 @@ export default function Products() {
             </div>
           </div>
 
-          {/* PRODUCTO 2: El Llamado a la Acción */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-700 group relative product-reveal opacity-0 translate-y-12 delay-[300ms] ease-out overflow-hidden rounded-sm">
             
-            <div className="relative w-full aspect-[16/10] overflow-hidden border-b border-brand-oak/20">
+            <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
               <Image 
-                src="/book2.webp" 
+                src="/2.webp" 
                 alt="Libro El Llamado - El arte de TRANSFORMAR tu hogar"
                 fill
                 priority 
@@ -159,21 +158,31 @@ export default function Products() {
             </div>
 
             <div className="p-8 lg:p-10 border-b border-brand-oak/20 bg-brand-offwhite/30 flex flex-col items-center text-center">
-              <p className="text-brand-olive tracking-[0.2em] text-[10px] font-bold uppercase mb-4">Ebook 02 + 8 Semanas de Menús + Lista</p>
+              <p className="text-brand-olive tracking-[0.2em] text-[10px] font-bold uppercase mb-4">Ebook 02 + 8 Semanas de Menus + Lista de Mercado Inteligente</p>
               <h3 className="text-2xl font-serif text-brand-cedar mb-2">El Llamado a la Accion</h3>
               <p className="text-brand-taupe font-sans text-xs mb-6 h-12">El arte de TRANSFORMAR tu hogar</p>
               <div className="text-4xl font-serif text-brand-cedar">USD 12</div>
             </div>
             
             <div className="p-8 lg:p-10 flex flex-col flex-grow">
-              <p className="text-brand-taupe font-sans text-xs leading-relaxed mb-8 flex-grow">
+              <p className="text-brand-taupe font-sans text-xs leading-relaxed mb-4">
                 Si el primero fue el libro del despertar, este es el libro del hacer. La depuración consciente, la organización con propósito. Una guia real para tomar acción sin presión pero con constancia.
               </p>
               
+              <p className="text-brand-cedar font-bold text-xs tracking-widest uppercase mb-4">QUÉ INCLUYE:</p>
+              <ul className="space-y-3 mb-8 flex-grow">
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> El cambio de visión — cómo ver tu casa con honestidad antes de mover un solo cajón.</li>
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Por dónde empezar — el método del menor apego y por qué cambia todo.</li>
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> La secuencia real: depurar, limpiar, organizar y solo entonces comprar.</li>
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Cómo armar tu equipo de transformación sin gastar de más.</li>
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Cómo convertir el proyecto en hábito — con la familia adentro del método.</li>
+                <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Qué se libera adentro de ti cuando tu casa, finalmente, fluye.</li>
+              </ul>
+              
               <div className="bg-brand-cedar/5 p-4 rounded-sm border border-brand-oak/20 mb-8">
-                <p className="text-brand-cedar font-bold text-[10px] tracking-widest uppercase mb-2">Bonus Incluidos:</p>
-                <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ 8 semanas de menús:</strong> Un sistema de menús que libera mente.</p>
-                <p className="text-xs text-brand-taupe"><strong className="font-medium text-brand-cedar">✓ Lista de mercado:</strong> Inteligente descargable, y los rituales que sostienen el método.</p>
+                <p className="text-brand-cedar font-bold text-[10px] tracking-widest uppercase mb-2">BONUS INCLUIDOS:</p>
+                <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ 8 semanas de menús</strong> Un sistema de menús que libera mente</p>
+                <p className="text-xs text-brand-taupe"><strong className="font-medium text-brand-cedar">✓ Lista de mercado inteligente</strong> descargable, y los rituales que sostienen el método</p>
               </div>
 
               <button className="w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto">
@@ -185,9 +194,9 @@ export default function Products() {
           {/* PRODUCTO 3: La Capacitación */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-500 group relative product-reveal opacity-0 translate-y-12 delay-[500ms] ease-out overflow-hidden rounded-sm">
             
-            <div className="relative w-full aspect-[16/10] overflow-hidden border-b border-brand-oak/20">
+            <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
               <Image 
-                src="/book3.webp" 
+                src="/3.webp" 
                 alt="Manual de Capacitación Liviin Premium"
                 fill
                 priority
@@ -207,7 +216,7 @@ export default function Products() {
               <p className="text-brand-taupe font-sans text-xs leading-relaxed mb-6">
                 El producto premium del universo Liviin. El método, ahora a cuatro manos. Tres módulos de capacitación diseñados de forma sencilla, pensados para que entregues el método a quién te ayuda a sostener tu hogar.
               </p>
-              <p className="text-brand-cedar font-bold text-xs tracking-widest uppercase mb-4">Qué Incluye:</p>
+              <p className="text-brand-cedar font-bold text-xs tracking-widest uppercase mb-4">QUÉ INCLUYE:</p>
               <ul className="space-y-4 mb-8 flex-grow">
                 <li>
                   <p className="text-xs font-bold text-brand-cedar leading-none mb-1"><span className="text-brand-olive mr-1">Módulo 1.</span> Cuidado general del hogar</p>
@@ -224,7 +233,7 @@ export default function Products() {
               </ul>
               
               <div className="bg-transparent p-4 h-[10px] mb-8">
-                 {/* Espaciador invisible para alinear los botones */}
+                 {/* Espaciador invisible para alinear los botones con las otras tarjetas */}
               </div>
 
               <button className="w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto">

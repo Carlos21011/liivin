@@ -54,9 +54,33 @@ export default function Hero() {
 
             <div className="flex items-center gap-4 mt-2 sm:mt-0">
               <div className="flex -space-x-3">
-                <div className="w-9 h-9 rounded-full bg-brand-oak border-2 border-brand-offwhite"></div>
-                <div className="w-9 h-9 rounded-full bg-brand-shadow border-2 border-brand-offwhite"></div>
-                <div className="w-9 h-9 rounded-full bg-brand-taupe border-2 border-brand-offwhite"></div>
+                {/* Perfil 1 */}
+                <div className="relative w-9 h-9 rounded-full bg-brand-oak border-2 border-brand-offwhite overflow-hidden">
+                  <Image 
+                    src="https://randomuser.me/api/portraits/women/44.jpg" 
+                    alt="Perfil de asistente capacitada 1" 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+                {/* Perfil 2 */}
+                <div className="relative w-9 h-9 rounded-full bg-brand-shadow border-2 border-brand-offwhite overflow-hidden">
+                  <Image 
+                    src="https://randomuser.me/api/portraits/women/68.jpg" 
+                    alt="Perfil de asistente capacitada 2" 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
+                {/* Perfil 3 */}
+                <div className="relative w-9 h-9 rounded-full bg-brand-taupe border-2 border-brand-offwhite overflow-hidden">
+                  <Image 
+                    src="https://randomuser.me/api/portraits/women/90.jpg" 
+                    alt="Perfil de asistente capacitada 3" 
+                    fill 
+                    className="object-cover"
+                  />
+                </div>
               </div>
               <p className="text-xs text-brand-cedar/80 max-w-[140px] leading-snug">
                 Más de <strong className="text-brand-cedar font-bold">140 asistentes</strong> capacitadas.
