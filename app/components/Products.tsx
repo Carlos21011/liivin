@@ -45,7 +45,7 @@ export default function Products() {
         if (!isUserInteracting && container) {
           const cardWidth = container.offsetWidth;
           const isAtEnd = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 10;
-          
+
           container.scrollTo({
             left: isAtEnd ? 0 : container.scrollLeft + cardWidth,
             behavior: 'smooth'
@@ -55,8 +55,8 @@ export default function Products() {
     };
 
     const pauseAutoplay = () => { isUserInteracting = true; };
-    const resumeAutoplay = () => { 
-      isUserInteracting = false; 
+    const resumeAutoplay = () => {
+      isUserInteracting = false;
       clearInterval(autoplayTimer);
       startAutoplay();
     };
@@ -77,7 +77,7 @@ export default function Products() {
   return (
     <section id="productos" className="w-full bg-brand-offwhite py-24 px-6 lg:px-12 relative border-t border-brand-oak/20 overflow-hidden">
       <div className="max-w-[1400px] mx-auto">
-        
+
         {/* Cabecera */}
         <div className="text-center mb-16 product-reveal opacity-0 translate-y-12 transition-all duration-1000 ease-out">
           <p className="text-brand-olive tracking-[0.2em] text-xs font-semibold uppercase mb-4">
@@ -91,20 +91,20 @@ export default function Products() {
           </p>
         </div>
 
-        <div 
+        <div
           ref={scrollContainerRef}
           className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 lg:pb-0 lg:grid lg:grid-cols-3 scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
-          
+
           {/* PRODUCTO 1: El Despertar */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-700 group relative product-reveal opacity-0 translate-y-12 delay-[100ms] ease-out overflow-hidden rounded-sm">
-            
+
             <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
-              <Image 
-                src="/1.webp" 
+              <Image
+                src="/1.webp"
                 alt="Libro Liviin"
                 fill
-                priority 
+                priority
                 sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
@@ -116,7 +116,7 @@ export default function Products() {
               <p className="text-brand-taupe font-sans text-xs mb-6 h-12">El arte de LIDERAR tu hogar</p>
               <div className="text-4xl font-serif text-brand-cedar">USD 12</div>
             </div>
-            
+
             <div className="p-8 lg:p-10 flex flex-col flex-grow">
               <p className="text-brand-cedar font-sans text-xs leading-relaxed italic mb-4">
                 Un método para mujeres que quieren una casa que funcione aunque ellas no estén.
@@ -130,7 +130,7 @@ export default function Products() {
                 <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Mi historia — donde nació este método.</li>
                 <li className="flex items-start gap-3 text-[11px] text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Cinco scripts listos para las conversaciones que más cuestan: la entrevista de tu asistente, la primera semana, el feedback que reconoce, el feedback que corrige, y el momento de verdad cuando algo se rompe.</li>
               </ul>
-              
+
               <div className="bg-brand-cedar/5 p-4 rounded-sm border border-brand-oak/20 mb-8">
                 <p className="text-brand-cedar font-bold text-[10px] tracking-widest uppercase mb-2">Bonus Incluidos:</p>
                 <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ Las manos que sostienen tu hogar:</strong> Un ensayo editorial corto sobre lo que sienten las asistentes del hogar al llegar a un lugar nuevo.</p>
@@ -138,20 +138,25 @@ export default function Products() {
                 <p className="text-[10px] text-brand-taupe/70 text-center uppercase tracking-widest mt-4">Acceso inmediato · Descarga permanente</p>
               </div>
 
-              <button className="w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors">
+              <a
+                href="https://pay.hotmart.com/P106568132L"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors"
+              >
                 Comprar Ebook 01
-              </button>
+              </a>
             </div>
           </div>
 
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-700 group relative product-reveal opacity-0 translate-y-12 delay-[300ms] ease-out overflow-hidden rounded-sm">
-            
+
             <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
-              <Image 
-                src="/2.webp" 
+              <Image
+                src="/2.webp"
                 alt="Libro El Llamado - El arte de TRANSFORMAR tu hogar"
                 fill
-                priority 
+                priority
                 sizes="(max-width: 640px) 70vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
@@ -163,12 +168,12 @@ export default function Products() {
               <p className="text-brand-taupe font-sans text-xs mb-6 h-12">El arte de TRANSFORMAR tu hogar</p>
               <div className="text-4xl font-serif text-brand-cedar">USD 12</div>
             </div>
-            
+
             <div className="p-8 lg:p-10 flex flex-col flex-grow">
               <p className="text-brand-taupe font-sans text-xs leading-relaxed mb-4">
                 Si el primero fue el libro del despertar, este es el libro del hacer. La depuración consciente, la organización con propósito. Una guia real para tomar acción sin presión pero con constancia.
               </p>
-              
+
               <p className="text-brand-cedar font-bold text-xs tracking-widest uppercase mb-4">QUÉ INCLUYE:</p>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> El cambio de visión — cómo ver tu casa con honestidad antes de mover un solo cajón.</li>
@@ -178,25 +183,30 @@ export default function Products() {
                 <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Cómo convertir el proyecto en hábito — con la familia adentro del método.</li>
                 <li className="flex items-start gap-3 text-xs text-brand-taupe leading-relaxed"><span className="text-brand-olive">✓</span> Qué se libera adentro de ti cuando tu casa, finalmente, fluye.</li>
               </ul>
-              
+
               <div className="bg-brand-cedar/5 p-4 rounded-sm border border-brand-oak/20 mb-8">
                 <p className="text-brand-cedar font-bold text-[10px] tracking-widest uppercase mb-2">BONUS INCLUIDOS:</p>
                 <p className="text-xs text-brand-taupe mb-2"><strong className="font-medium text-brand-cedar">✓ 8 semanas de menús</strong> Un sistema de menús que libera mente</p>
                 <p className="text-xs text-brand-taupe"><strong className="font-medium text-brand-cedar">✓ Lista de mercado inteligente</strong> descargable, y los rituales que sostienen el método</p>
               </div>
 
-              <button className="w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto">
+              <a
+                href="https://pay.hotmart.com/D106570914X"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto"
+              >
                 Comprar Ebook 02
-              </button>
+              </a>
             </div>
           </div>
 
           {/* PRODUCTO 3: La Capacitación */}
           <div className="min-w-[90%] sm:min-w-[70%] lg:min-w-0 snap-center bg-white border border-brand-oak/30 flex flex-col justify-between hover:shadow-xl transition-all duration-500 group relative product-reveal opacity-0 translate-y-12 delay-[500ms] ease-out overflow-hidden rounded-sm">
-            
+
             <div className="relative w-full aspect-video overflow-hidden border-b border-brand-oak/20">
-              <Image 
-                src="/3.webp" 
+              <Image
+                src="/3.webp"
                 alt="Manual de Capacitación Liviin Premium"
                 fill
                 priority
@@ -211,7 +221,7 @@ export default function Products() {
               <p className="text-brand-taupe font-sans text-xs mb-6 h-12">El arte de CUIDAR tu hogar</p>
               <div className="text-4xl font-serif text-brand-cedar">USD 30</div>
             </div>
-            
+
             <div className="p-8 lg:p-10 flex flex-col flex-grow">
               <p className="text-brand-taupe font-sans text-xs leading-relaxed mb-6">
                 El producto premium del universo Liviin. El método, ahora a cuatro manos. Tres módulos de capacitación diseñados de forma sencilla, pensados para que entregues el método a quién te ayuda a sostener tu hogar.
@@ -231,37 +241,41 @@ export default function Products() {
                   <p className="text-[11px] text-brand-taupe leading-relaxed">(organización de closets, organización de nevera y despensa, organización de lencería)</p>
                 </li>
               </ul>
-              
+
               <div className="bg-transparent p-4 h-[10px] mb-8">
-                 {/* Espaciador invisible para alinear los botones con las otras tarjetas */}
+                {/* Espaciador invisible para alinear los botones con las otras tarjetas */}
               </div>
 
-              <button className="w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto">
+              <a
+                href="https://pay.hotmart.com/W106571308T"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center w-full py-4 border border-brand-cedar text-brand-cedar font-sans tracking-widest uppercase text-xs font-bold hover:bg-brand-cedar hover:text-brand-offwhite transition-colors mt-auto"
+              >
                 Comprar Manual
-              </button>
+              </a>
             </div>
           </div>
 
         </div>
 
-        {/* Indicador Dinámico de Swipe para Móvil */} 
+        {/* Indicador Dinámico de Swipe para Móvil */}
         <div className="flex justify-center gap-2 mt-4 mb-12 lg:hidden product-reveal opacity-0 transition-opacity duration-1000 delay-[700ms]">
           {[0, 1, 2].map((dot) => (
-            <span 
-              key={dot} 
-              className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${
-                activeSlide === dot ? 'bg-brand-olive' : 'bg-brand-oak/30'
-              }`}
+            <span
+              key={dot}
+              className={`w-1.5 h-1.5 rounded-full transition-colors duration-300 ${activeSlide === dot ? 'bg-brand-olive' : 'bg-brand-oak/30'
+                }`}
             ></span>
           ))}
         </div>
 
         <div className="mt-8 relative flex flex-col lg:flex-row items-center justify-between bg-brand-cedar border-2 border-brand-oak p-10 lg:p-16 shadow-2xl product-reveal opacity-0 translate-y-12 transition-all duration-1000 delay-[700ms] ease-out">
-          
+
           <div className="absolute -top-4 left-1/2 -translate-x-1/2 lg:left-12 lg:translate-x-0 bg-brand-oak text-brand-cedar px-6 py-1 font-sans text-xs tracking-widest uppercase font-bold whitespace-nowrap">
             Para Quien Quiere Todo
           </div>
-          
+
           <div className="w-full lg:w-7/12 text-center lg:text-left mb-10 lg:mb-0 mt-4 lg:mt-0">
             <h3 className="text-4xl md:text-5xl font-serif text-brand-offwhite mb-4">
               El Pack Liviin <span className="italic text-brand-oak">Completo</span>
@@ -270,16 +284,21 @@ export default function Products() {
               Los tres libros. El método entero. Un solo viaje. Acceso permanente a todo lo que se publique, en el orden que tú quieras recorrerlo. <strong className="text-brand-oak font-normal">Para quien ya sabe que esto no es un ebook que se lee y se olvida. Es una transformación.</strong>
             </p>
           </div>
-          
+
           <div className="w-full lg:w-5/12 flex flex-col items-center lg:items-end">
             <div className="flex flex-col items-center lg:items-end mb-6">
               <div className="text-sm text-brand-oak line-through mb-1">En lugar de USD 54</div>
               <div className="text-6xl md:text-7xl font-serif text-brand-offwhite leading-none">USD 40</div>
             </div>
 
-            <button className="w-full sm:w-auto px-10 py-5 bg-brand-oak text-brand-cedar font-sans tracking-widest uppercase text-sm font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(199,194,172,0.15)] text-center">
+            <a
+              href="https://pay.hotmart.com/E106663182E"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center w-full sm:w-auto px-10 py-5 bg-brand-oak text-brand-cedar font-sans tracking-widest uppercase text-sm font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(199,194,172,0.15)]"
+            >
               Garantizar el Pack
-            </button>
+            </a>
             <p className="text-brand-offwhite/50 text-[10px] tracking-widest uppercase mt-4">Acceso inmediato · Descarga permanente</p>
           </div>
 
