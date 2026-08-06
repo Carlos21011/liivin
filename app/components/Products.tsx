@@ -292,7 +292,7 @@ export default function Products() {
             </div>
 
             <a
-              href="https://pay.hotmart.com/E106663182E"
+              href="https://pay.hotmart.com/E106663182E?off=wmmdvmcy"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center w-full sm:w-auto px-10 py-5 bg-brand-oak text-brand-cedar font-sans tracking-widest uppercase text-sm font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_30px_rgba(199,194,172,0.15)]"

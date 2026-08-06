@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -48,9 +49,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
-            <button className="w-full sm:w-auto px-10 py-4 bg-brand-cedar text-brand-offwhite font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-oak hover:text-brand-cedar transition-all duration-300 shadow-xl">
+            <Link 
+              href="#precios" 
+              className="w-full sm:w-auto text-center px-10 py-4 bg-brand-cedar text-brand-offwhite font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-oak hover:text-brand-cedar transition-all duration-300 shadow-xl inline-block"
+            >
               Empezar el Viaje
-            </button>
+            </Link>
 
             <div className="flex items-center gap-4 mt-2 sm:mt-0">
               <div className="flex -space-x-3">
