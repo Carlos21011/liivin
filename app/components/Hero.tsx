@@ -50,7 +50,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
             <Link 
-              href="#precios" 
+              href="#productos" 
               className="w-full sm:w-auto text-center px-10 py-4 bg-brand-cedar text-brand-offwhite font-sans tracking-[0.15em] uppercase text-xs font-bold hover:bg-brand-oak hover:text-brand-cedar transition-all duration-300 shadow-xl inline-block"
             >
               Empezar el Viaje
